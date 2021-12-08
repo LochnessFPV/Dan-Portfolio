@@ -2,4 +2,4 @@
 
 This is the link to my deployed website.
 
-[ ---> ENJOY! <--- ] (https://danlo-byte.github.io/Dan-Portfolio/)
+[ ---> ENJOY! <--- ](https://danlo-byte.github.io/Dan-Portfolio/)
