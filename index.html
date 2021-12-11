@@ -16,38 +16,199 @@
 
 <body> 
   <header>
-  <h1>
+    <div class="profilePic"></div>
+    <h1>
        <!-- Portfolio's name -->
       Daniele Longo
-  </h1>
-  <h2>
+    </h1>
+    <h2>
       | Full Stack Developer Portfolio |
-  </h2>
+    </h2>
 
   </header>
 
   <!-- Hero section -->
   <div class="hero">
-  <div class="profilePic"></div>
+    
 
-  <!-- Navigation links to sections -->
-  <nav>
-    <ul>
+    <!-- Navigation links to sections -->
+    <nav>
+      <ul>
         <li>
-            <a href="#my-background">My Background</a>
+          <a href="#my-background">My Background</a>
         </li>
         <li>
-            <a href="#my-projects">Check out my projects</a>
+          <a href="#my-projects">Check out my projects</a>
         </li>
         <li>
-            <a href="#Achievements">My achievements</a>
+          <a href="#achievements">My achievements</a>
         </li>
         <li>
-            <a href="#contacts">Let's chat</a>
+          <a href="#contacts">Let's chat</a>
         </li>
-    </ul>
-  </nav>
-</div>
+      </ul>
+    </nav>
+  </div>
 
+  <!-- Main content section -->
+  <div class="content">
+
+  <!-- "My background" sub-section -->      
+  <section id="my-background" class="my-background-container">
+    <img src="./assets/IMG/danWithSharks.jpg" alt="Dan analysing shark jaws" class="myBackground-Pic"/></img>
+    <div class="my-backgroundContent">
+      <h2 class="subTitle"> Background Story </h2>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni dignissimos amet inventore assumenda neque, odio reiciendis earum? Earum itaque, ex suscipit fugit unde labore eum! Sunt dolores eveniet corrupti nisi!
+      </p>
+    </div>
+  
+  </section>
+
+  <!-- Projects section -->
+  <section id="my-projects" class="my-projects">
+    
+    <h2 class="subTitle">My Projects</h2>
+      
+      <div class="projects-container">
+        <div class="main-project-card">
+          <img
+            src="./assets/IMG/work-in-progress.png"
+            alt="Work in Progress "
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Daniele's website</h3>
+          <p> 
+            The showcase of my main projects and the portal to contact me and see my previous work and experience!
+          </p>
+            <button 
+              href="https://github.com/DanLo-byte/Dan-Portfolio"
+              target="_blank"
+              class="project-link"
+              >View
+            </button>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/IMG/work-in-progress.png"
+            alt="Dan Project coming soon"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Java Script GAME</h3>
+          <p class="project-details">
+            Let's explore the potential of java-script with a fun game! 
+            Coming Soon!
+          </p>
+           <button href="#" target="_blank" class="project-link">Stay Tuned!</button>
+        </div>
+        <div class="project-card">
+          <img
+            src="./assets/IMG/work-in-progress.png"
+            alt="Upcoming project"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">SEO Project</h3>
+          <p class="project-details">
+            Code refactoring for an online marketing agency. Improving web engine searches and accessibility standards.
+          </p>
+            <button 
+              href="https://github.com/DanLo-byte/Horiseon-SEO-Code_Refactoring"
+              target="_blank"
+              class="project-link"
+              >Check this out!
+            </button>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+
+      <h2 class="subTitle">Achievements</h2>
+      
+      <div class="projects-container">
+        <div class="main-project-card">
+          <img
+            src="./assets/IMG/work-in-progress.png"
+            alt="Work in Progress "
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My personal achievements</h3>
+          <p> 
+            Here will be displayed my personal achievements.
+          </p>
+            <button 
+              href="https://github.com/DanLo-byte/Dan-Portfolio"
+              target="_blank"
+              class="project-link"
+              >Nothing to see here YET!
+            </button>
+        </div>
+
+
+
+  <form>
+    <article id="contacts"> 
+    <div class="form-container">
+      <h3> Do you want to talk about coding? </h3>
+      <p>
+        Please fill the form and I'll get back to you 01100001 01110011 01100001 01110000 [ASAP]
+      </p>
+      <p>
+        <label for="username">Name:</label>
+        <!-- This element has a CSS declaration of `cursor: text` -->
+        <input id="username" type="text" placeholder="First Last" />
+      </p>
+      <p>
+        <label  for="email">E-mail:</label>
+        <input id="email" type="text" placeholder="me@example.com" />
+      </p>
+      <p>
+        <label for="reason">What would you like to talk about</label>
+        <!-- This element has a CSS declaration of `appearance: menulist` -->
+        <select id="reason">
+          <option>Coding Resources</option>
+          <option selected>Coding & Bots</option>
+          <option>Work & Opportunities</option>
+          <option>Fun & Diving</option>
+          <option>Sharks</option>
+        </select>
+      </p>
+      <p>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" placeholder="Great profile!"></textarea>
+      </p>
+      <p>
+        <input class="checkbox" id="agreement" type="checkbox" />
+        <label for="agreement">I agree to share my e-mail address with Daniele Longo</label>
+      </p>
+      <p>
+        <input
+          type="submit"
+          value="SUBMIT"
+          id="submit-btn"
+          class="submit-btn"
+        />
+      </p>
+    </div>
+  
+  </form>
+
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <h4>Made with ❤️️ by 
+      <a href="https://www.linkedin.com/in/daniele-longo91/" target="_blank"
+      >Daniele Longo</a
+    >
+    </h4>
+    <p>
+      &copy; 2021 Lochness Programming & Crypto Enterprise Inc.
+    </p>
+  </footer>
 
 </body>

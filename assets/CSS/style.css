@@ -1,4 +1,13 @@
 
+:root {
+  --primaryColor: rgb(26, 102, 202, 0.8);
+  --secondaryColor: #f1fcb6;
+  --primaryShadow: rgb(26, 102, 202, 0.45);
+  --secondaryShadow: rgba(255, 0, 0, 0.63);
+  --primaryFontSize: 3.3rem;
+  --secondaryFontSize: 2rem;
+}
+
 /* Universal selector Style */
 * {
   box-sizing: border-box;
@@ -16,29 +25,29 @@ body {
 header {
   display: inline-block;
   top: 0;
-  width: 100%;
-  padding: 3%;
+  width: -webkit-fill-available;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: cover;
-  background-color: rgba(84, 84, 91, 0.763);
-  color: #ffffff;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
   text-align: center;
 
 }
 
 header h1 {
-  font-size: 48px;
+  font-size: 2.3rem;
+  padding-top: 7%;
 }
 
 header h2 {
-  font-size: 25px;
-  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--secondaryFontSize);
+  padding: 2%;
 }
+
 div nav {
   margin-right: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  float: right;
+  font-size: var(--secondaryFontSize);
   padding: 4%;
 }
 
@@ -47,23 +56,28 @@ div nav ul {
 }
 
 div nav ul li {
-  display: inline-block;
-  margin-left: 100px;
-  padding: 8%;
-  font-size: 1.7rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: inline-flex;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  padding: 4%;
+  font-size: var(--secondaryFontSize);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--primaryShadow);
+  font-weight: bolder;
+  border-radius: 50px;
+  background-color: var(--primaryShadow);
+  border-radius: 15px;
+  box-shadow: 0 3px 50px var(--secondaryShadow);
 }
 /* Header and Navigation Styles END */
 
-/* <a> Element Style */
-a {
-  color: #ffffff;
-
-}
 
 /* <p> Element Style */
 p {
-  font-size: 16px;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  padding: 2%;
 }
 
 /* Hero Style  */
@@ -78,12 +92,219 @@ p {
 
 /* Hero Style  */
 .profilePic {
-  float: center; 
+  float: left; 
   margin: 15px;
   background-image: url("../IMG/profile-pic.jpeg");
-  background-size: 300px;
+  background-size: 250px;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 25px;
   padding: 160px;
 }
 
+.my-background {
+  display: inline-flexbox;
+  padding: 20px;
+}
+
+.my-background-container {
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 12%;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+  box-shadow: 0 3px 50px var(--primaryShadow);
+  text-align: start;
+  height: fit-content;
+  width: fit-content;
+  padding: 10%;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+  box-shadow: 0 3px 50px var(--secondaryShadow);
+}
+
+/* Utility class Styles */
+.myBackground-Pic {
+  height: auto;
+  width: 100%;
+  margin-top: 5px;
+  background-image: url("../IMG/danWithSharks.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 1px solid red;
+  border-radius: 16px;
+  box-shadow: 0 3px 70px var(--secondaryShadow);
+  position: relative;
+  left: 15px;
+  margin-right: 25px;
+}
+
+.my-backgroundContent {
+  display: flex;
+  flex: 1 0 100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.subTitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--secondaryFontSize);
+  padding: 12%;
+}
+h3 {
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 2%;
+}
+
+/* Content Style */
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin-left: 12%;
+}
+
+.main-project-card {
+  flex: 1 0 100%;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+  box-shadow: 0 3px 50px var(--secondaryShadow);
+  text-align: start;
+  width: 100%;
+  padding: 20px;
+}
+
+.project-card {
+  flex: 1 0 200px;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+  box-shadow: 0 3px 50px var(--secondaryShadow);
+  text-align: start;
+  width: 50%;
+  padding: 45px;
+  margin: 25px;
+}
+
+.project-pic {
+  width: 70%;
+  height: auto;
+}
+
+.project-link {
+  font-size: 1.5rem;
+  float: right;
+  padding: 3%;
+  border-radius: 2rem;
+  margin: 6%;
+}
+
+.form-container {
+  width: auto;
+  margin: 5% 0% 5% 10%;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primaryShadow);
+}
+
+.submit-btn {
+  width: 70%;
+  height: 100%;
+  margin: 30px 5%;
+  font-size: 150%;
+  background-color: var(--primaryColor);
+  border: 3px solid #13293d;
+  border-radius: 20px;
+}
+
+/* Footer Styles START */
+.footer {
+  margin: 0;
+  width: -webkit-fill-available;
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  background-color: var(--primaryColor);
+}
+ .h4 {
+   font-size: 24px;
+ }
+
+
+/* The user's cursor is positioned over the element */
+.project-card:hover {
+  background-color: #2f00ff;
+  color: var(--secondaryColor);
+}
+
+/* The user is actively pressing down on the element */
+.project-card:active {
+  font-size: 300%;
+  box-shadow: 0 0 100px rgb(255, 0, 0) inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+.project-card:focus {
+  outline: none;
+  border-color: #ffb58a;
+}
+
+.main-project-card:hover {
+  background-color: #2f00ff;
+  color: var(--secondaryColor);
+}
+
+/* The user is actively pressing down on the element */
+.main-project-card:active {
+  font-size: 300%;
+  box-shadow: 0 0 100px rgb(255, 0, 0) inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+.main-project-card:focus {
+  outline: none;
+  border-color: #ffb58a;
+}
+
+div nav ul li:hover {
+  background-color: #2f00ff;
+  color: var(--secondaryColor);
+}
+
+div nav ul li:active {
+  font-size: 150%;
+  box-shadow: 0 0 100px rgb(255, 0, 0) inset;
+}
+
+div nav ul li:focus {
+  outline: none;
+  border-color: #ffb58a;
+}
+
+.submit-btn:hover {
+  font-size: 200%;
+  box-shadow: 0 0 100px rgb(255, 0, 0) inset;
+}
+
+.submit-btn:active {
+  font-size: 200%;
+  box-shadow: 0 0 100px rgb(60, 255, 0) inset;
+}
+
+/* For width 500px and larger: */
+
+@media only screen and (min-width: 500px) {
+  .hero {
+    background-image: url("../IMG/harbourBridge.jpg");
+  }
+}
