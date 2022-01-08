@@ -227,6 +227,21 @@ h3 {
   border-radius: 20px;
 }
 
+/* SocialMedia buttons */
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+/* SocialMedia button ends */
+
 /* Footer Styles START */
 .footer {
   margin: 0;
