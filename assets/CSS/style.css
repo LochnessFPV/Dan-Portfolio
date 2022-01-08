@@ -228,7 +228,7 @@ h3 {
 }
 
 /* SocialMedia buttons */
-.socials {
+.socialmedia {
   display: flex;
   flex-direction: column;
   position: fixed;
